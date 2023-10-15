@@ -74,6 +74,7 @@ public class App extends MultiDexApplication {
                 .setSupportSP(false)
                 .setSupportSubunits(Subunits.MM);
         PlayerHelper.init();
+        PythonLoader.getInstance().setApplication(this);
 
         // Delete Cache
         /*File dir = getCacheDir();
