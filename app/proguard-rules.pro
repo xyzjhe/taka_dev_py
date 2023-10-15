@@ -210,6 +210,13 @@
     <methods>;
 }
 
+# py
+
+-keep public class com.undcover.freedom.pyramid.** { *; }
+-dontwarn com.undcover.freedom.pyramid.**
+-keep public class com.chaquo.python.** { *; }
+-dontwarn com.chaquo.python.**
+
 -keep class com.github.catvod.crawler.*{*;}
 
 # magnet：解决模拟器推送 磁力链接 闪退
